@@ -19,15 +19,15 @@ Ways to analyze are time (duration of execution) and space (amount of memory use
 
 How to define good code?
 - runs fast
-- less memorty
-- readable
+- less memory
+- readability
 - does what it's meant to do
 
 2 main factors to define good code base 
 
-Readablility - can developer understand the code at glance, simple enough to interpret
+Readability - can developer understand the code at glance, simple enough to interpret
 
-Scability - is the code scalable or not (speed and space), 
+Scalability - is the code scalable or not (speed and space), 
 application can only be scaled if it is fast and uses less memory
 
 Scalability
@@ -40,7 +40,7 @@ Scalability
     Lesser space algorithm takes, better space complexity
     
 #Big O Notation
-Big O is used to give rating for code base. 
+Big O is used to give a rating for code base. 
 Describes performance or complexity of an algorithm
 Used to measure time and space complexity of code base
 
@@ -53,7 +53,7 @@ Time Complexity: how much time does it take to run completely?c
 Space Complexity: how much extra space does it require in the process?
 
 Big O ratings
-Excelent 
+Excellent 
 Good 
 Fair
 Bad 
@@ -61,18 +61,28 @@ Horrible
 
 
 # Key takeaways
-  Don't calculate time in mins or seconds (only use for test and dev not prod)
+  Don't calculate time in minutes or seconds (only use for test and dev not prod)
   System clock is not dependable because different machines can give different results
-  evaluating speed with timestamp Depends on hardware, ram etc
+  evaluating speed with timestamp depends on hardware, ram etc.
   Can't depend on system clock nor hardware because of to many variables
   
   Big O gives performance rating to our program for time and space
   Doesn't depend on time
-  depends on how many steps we are performing
+  depends on how many steps the program is performing
   Focus is to calculate the amount of work we do or the number of comparisons we perform
   
-  Language we use to describe how long an algo or function takes to run
+  Big O Notation is the language used to describe how long an algorithm or function takes to run
   depends on actual code and operation
+
+  Space complexity of an algorithm represents the amount of extra 
+  memory space needed by the algorithm in its life cycle
+
+  We usually have 2 types of space requirements:
+    1. To store our input data 
+    2. Extra space necessary to execute the program
+
+  How much additional memory do we need to allocate in order to
+  run our code
    
   
 

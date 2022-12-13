@@ -10,8 +10,6 @@ public class Application {
          * using while loop
          */
 
-
-
         int number = 100;
         int total = 0;
 

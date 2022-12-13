@@ -1,4 +1,4 @@
-package big.o.notation;
+package big.o.notation.time;
 
 import java.util.Arrays;
 import java.util.List;
@@ -43,11 +43,13 @@ public class SimplifyingBigO {
     //Rule 4 Consider different variable for different inputs
     /*
     complexity is increased when operation has multiple variables and inputs
+    multiple operations and multiple inputs = O(n) and O(m) = O(n +m)
+    when you have multiple inputs but one operation it becomes O(n) and O(n) => O(n +n) => O(2n) => O(n)
 
      */
 
     //example
-    public static void main(String... args) {
+    public static void main2(String... args) {
         List num_list = Arrays.asList(1,2,3,4,5,6); //O(1)
         List char_list = Arrays.asList('a','b','c','d'); //O(1)
 
@@ -55,11 +57,13 @@ public class SimplifyingBigO {
     }
     static void randomFn(List a, List b) {
         System.out.println("items in a: ");
+        //complexity for this loop is O(n) because we depend on input from list a
         for (Object item : a) {
             System.out.print( item + " ");//O(n)
         }
         System.out.println();
         System.out.println("items in b: ");
+        //complexity for this loop is O(m) because we depend on input from list b
         for (Object item : b) {
             System.out.print( item + " "); //O(m)
         }
@@ -67,6 +71,29 @@ public class SimplifyingBigO {
 
     //Rule 5 Remove all dominants
     /*
+    common case would be nested loops. can also have multiple inputs or operations
 
      */
+
+    public static void main(String... args){
+        List num_list = Arrays.asList(1,2,3,4,5,6); //O(1)
+        randFn(num_list);
+    }
+
+    static void randFn(List nums) {
+        int total = 0; // O(1)
+        boolean allInteger = true; // O(1)
+
+        for (Object num : nums) {
+            System.out.println(num);// O(n)
+        }
+
+        for (Object num : nums) {
+            for (Object num2 : nums) {
+                System.out.println("First num: " + num + " second num: " + num2);// O(n + m)
+                total+=1; // O(n)
+            }
+        }
+    }
+
 }

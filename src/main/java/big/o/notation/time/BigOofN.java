@@ -1,4 +1,4 @@
-package big.o.notation;
+package big.o.notation.time;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,13 +7,12 @@ import java.util.List;
 public class BigOofN {
 
     /**
-     * O(n) O of n, linear opertions used during loops i.e for, while
-     * O(1) constant, each of these values have some weightage
+     * O(n) O of n, linear operations used during loops i.e. for, while, foreach
      *
      * Program calculates O(n) using inputs and operations
      * O(n) searches every element even if element is found
      *
-     * number of operations = number of input pattern is big o of n, linear path
+     * number of operations = number of input. pattern is big o of n, linear path
      * Luffy, Zoro, Nami, Usopp, Sanji, Chopper, Robin, Brook, Franky, Jimbei
      */
 
@@ -25,7 +24,7 @@ public class BigOofN {
 
         //5 items 5 operations
         //linear path
-        //pattern O(n) complexity big o of n
+        //pattern O(n) complexity is big o of n
         List<String> extendedStrawHats = Arrays.asList(new String[]{"Sanji", "Usopp", "Chopper", "Robin", "Brook"});
 
         pirateCrew(firstStrawHats);

@@ -1,4 +1,4 @@
-package big.o.notation;
+package big.o.notation.time;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -14,7 +14,6 @@ public class MeasureTimeInJava {
         System.out.println("Elapsed time to run for loop in millis: " +
                 forElapsedTime/1000000 + " ms"); // 1MM because it's nano, more accurate
 
-
         //execution while loop
         long whileStartTime = System.nanoTime();
         int numOfObj = 1000000;
@@ -27,6 +26,4 @@ public class MeasureTimeInJava {
         System.out.println("Elapsed time to run while loop in millis: " +
                 whileElapsedTime/1000000 + " ms"); // 1MM because it's nano, more accurate
     }
-
-
 }
